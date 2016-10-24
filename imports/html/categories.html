@@ -1,0 +1,89 @@
+<div class="page-content-wrapper ">
+    <div class="content ">
+        <div class="jumbotron vertical center bg-white column-w4 vertical-bottom" data-pages="parallax">
+            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20 full-height">
+                <div class="inner text-center p-t-50 m-t-80 full-height">
+                    <img class="sm-image-responsive-height" src="assets/img/demo/icons_hero.png" data-src="assets/img/demo/icons_hero.png" data-src-retina="assets/img/demo/icons_hero2x.png" alt="" width="612" height="69">
+                    <div class="m-b-10">
+                        <h2 class=" p-t-10 inline">Accèdez à la totalité des documentaires et reportages.</h2>
+                    </div>
+                    <div class="input-group transparent col-md-4 center-margin">
+                        <input type="text" class="form-control" placeholder="Recherche dans le titre et la description" id="icon-filter" name="icon-filter">
+                        <span class="input-group-addon ">
+                                <i class="pg-search"></i>
+                            </span>
+                    </div>
+                    <div class="m-t-20 m-b-40 ">
+                        <p class="small hint-text"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container-fixed-lg" style="min-height: 600px;">
+            <a class="btn btn-success btn-cons" href="ws:" ws_id="0" ws_meth="ajout_film">Ajouter un film</a>
+            <a class="btn btn-danger btn-cons" href="ws:" ws_id="0" ws_meth="suppression_tout_film">! Supprimer tout les films !</a>
+            <br>
+            <div class="checkbox check-success checkbox-circle">
+                <input type="checkbox" value="1" id="checkbox8" checked>
+                <label for="checkbox8">Rafraîchissement auto</label>
+            </div>
+            <p id="status"></p>
+            <div class="panel panel-transparent">
+                <div class="panel-heading">
+                    <div class="panel-title">liste complète de tout les films
+                    </div>
+                    <div class="pull-right">
+                        <div class="col-xs-12">
+                            <input type="text" id="search-table" class="form-control pull-right" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover demo-table-search" id="tableWithSearch">
+                        <thead>
+                        <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" aria-label="Title: activate to sort column descending" aria-sort="ascending">Titre</th>
+                            <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" aria-label="Places: activate to sort column ascending" style="width: 292px;">Description</th>
+                            <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" aria-label="Activities: activate to sort column ascending" style="width: 321px;">Année</th>
+                            <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 186px;">Actions</th>
+                            <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" aria-label="Last Update: activate to sort column ascending" style="width: 246px;">Date d'ajout</th>
+                        </tr>
+                        </thead>
+                        <tbody id="ajax_categories">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid container-fixed-lg footer">
+        <div class="copyright sm-text-center">
+            <p class="small no-margin pull-left sm-pull-reset">
+                <span class="hint-text">Copyright &copy; 2014 </span>
+                <span class="font-montserrat">REVOX</span>.
+                <span class="hint-text">All rights reserved. </span>
+                <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+            </p>
+            <p class="small no-margin pull-right sm-pull-reset">
+                <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span>
+            </p>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<script>
+    ajax_call.push('assets/plugins/datatables-responsive/js/datatables.responsive.js');
+    ajax_call.push('assets/js/categories.js');
+    inject_ajax();
+</script>
+
+
+
+
+
+
+
