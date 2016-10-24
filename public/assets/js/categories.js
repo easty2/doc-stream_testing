@@ -38,7 +38,7 @@ var stop_film = function(){
 };
 
 create_row = function(id,var1,var2,var3,var4){
-    debugger;
+    //debugger;
     var tr_1 = document.createElement('tr');
         tr_1.setAttribute('id',id);
     var td_1 = document.createElement('td');
