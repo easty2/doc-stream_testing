@@ -1,0 +1,28 @@
+{
+  "name": "doc-stream_testing",
+  "scripts": {
+  },
+  "env": {
+    "MONGO_URL": {
+      "required": true
+    },
+    "ROOT_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "mongolab",
+    "newrelic",
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jordansissel/heroku-buildpack-meteor.git"
+    }
+  ]
+}
